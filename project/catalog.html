@@ -9,10 +9,10 @@
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/main-logo.svg" width="100" height="100" alt="Логотип дизайн-студии Нёрдс"></a>
           <ul class="main-navigation-list">
-            <li class="studio"><a href="studio.html">Студия</a></li>
-            <li class="clients"><a href="clients.html">Клиенты</a></li>
-            <li class="catalog"><a href="catalog.html">Магазин</a></li>
-            <li class="contacts"><a href="contacts.html">Контакты</a></li>
+            <li class="item"><a href="studio.html">Студия</a></li>
+            <li class="item"><a href="clients.html">Клиенты</a></li>
+            <li class="item"><a href="catalog.html">Магазин</a></li>
+            <li class="item"><a href="contacts.html">Контакты</a></li>
           </ul>
           <ul class="items-folder">
             <!--Лого корзины?? -->
@@ -20,11 +20,55 @@
         </ul>
       </nav>
     </header>
-    <main>
-
+    <main class="container">
+      <h1>Магазин готовых шаблонов</h1>
+      <section class="ready-templates">
+        <ul class="ready-templates-items">
+          <li><a href="#"><img src="img/sedona.jpg" alt="Седона"></a></li>
+          <li><a href="#"><img src="img/pink.jpg" alt="Pink"></a></li>
+          <li><a href="#"><img src="img/borodinskiy.jpg" alt="Барбершоп "Бородинский""></a></li>
+          <li><a href="#"><img src="img/mishka.jpg" alt="Mishka"></a></li>
+          <li><a href="#"><img src="img/study.jpg" alt="Study"></a></li>
+          <li><a href="#"><img src="img/kvast.jpg" alt="Кваст"></a></li>
+        </ul>
+      </section>
     </main>
-    <footer>
+      <!-- Фильтры стоимости и сортировки по дате-->
+      <aside class="filters">
+      <ul class="filters-grid"> <!-- aside -->
+        <p>Сетка:</p> <!-- радиобаттон! -->
+         <li><input type="radio" name="adaptive" value="adaptive">Адаптивная</li>
+         <li><input type="radio" name="static" value="static">Фиксированная</li>
+         <li><input type="radio" name="liquid" value="liquid">Резиновая</li>
+      </ul>
+      <ul class="filters-features">
+        <li><input type="radio" name="feature" value="slider">Слайдер</li>
+        <li><input type="radio" name="feature" value="advatage-block">Блок преимуществ</li>
+        <li><input type="radio" name="feature" value="news">Новости</li>
+        <li><input type="radio" name="feature" value="gallery">Галерея</li>
+        <li><input type="radio" name="feature" value="folder">Корзина</li>
+      </ul>
+      <a class="button" href="#">Показать</a>
+      </aside>
 
+    <footer>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button" href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-affiliate">
+        <b>Давайте дружить, это выгодно!</b><br>
+        <b>Скидка 10% для друзей из социальных сетей</b>
+      </div>
     </footer>
   </body>
 </html>
