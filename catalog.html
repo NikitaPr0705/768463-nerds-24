@@ -37,12 +37,12 @@
     </section>
   </main>
   <!-- Фильтры стоимости и сортировки по дате-->
-  <aside class="filters">
+  <aside class="filter">
     <h2 class="visually-hidden">Фильтры макетов</h2>
-    <form class="filters-form" action="https://htmlacademy.ru" method="get">
+    <form class="filter-form" action="https://htmlacademy.ru" method="get">
       <fieldset>
         <legend>Сетка:</legend>
-        <ul class="filters-form-grid">
+        <ul class="filter-form-grid">
           <li class="visually-hidden">
             <input type="radio" name="adaptive" value="adaptive">Адаптивная
           </li>
@@ -56,21 +56,26 @@
       </fieldset>
       <fieldset>
         <legend>Особенности:</legend>
-        <ul class="filters-form-features">
+        <ul class="filter-form-features">
           <li>
-            <input type="checkbox" name="feature" value="slider" checked>Слайдер
+            <label for="filter-slider"></label>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>Слайдер
           </li>
           <li>
-            <input type="checkbox" name="feature" value="advatage-block">Блок преимуществ
+            <label for="filter-advantage"></label>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advatage-block" id="filter-advantage">Блок преимуществ
           </li>
           <li>
-            <input type="checkbox" name="feature" value="news" checked>Новости
+            <label for="filter-news"></label>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>Новости
           </li>
           <li>
-            <input type="checkbox" name="feature" value="gallery">Галерея
+            <label for="filter-gallery"></label>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">Галерея
           </li>
           <li>
-            <input type="checkbox" name="feature" value="folder">Корзина
+            <label for="filter-folder"></label>
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="folder" id="filter-folder">Корзина
           </li>
         </ul>
       </fieldset>
