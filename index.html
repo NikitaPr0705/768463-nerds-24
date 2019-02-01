@@ -9,17 +9,16 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/main-logo.svg" width="100" height="100" alt="Логотип дизайн-студии Нёрдс"></a>
+      <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"></a>
       <ul class="main-navigation-list">
         <li class="item"><a href="studio.html">Студия</a></li>
         <li class="item"><a href="clients.html">Клиенты</a></li>
         <li class="item"><a href="catalog.htm">Магазин</li>
         <li class="item"><a href="contacts">Контакты</a></li>
       </ul>
-      <ul class="folder">
-        <!-- Лого корзины?? -->
+      <ul>
         <li>
-          <a href="#"><img src="logo.svg" width="100" height="100" alt="Лого корзины">Корзина</a>
+          <a class="folder" href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Лого корзины">Корзина</a>
         </li>
       </ul>
       <!-- Slider -->
@@ -32,16 +31,19 @@
       <h2 class="visually-hidden">Услуги студии</h2>
       <ul class="services-types">
         <li class="web-sites">
+          <img src="img/web-sites.png" width="300" height="146" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <b>Мир никогда не будет прежним после того как увидит ваш сайт!</b>
           <a class="button" href="#">Заказать</a>
         </li>
         <li class="apps">
+          <img src="img/apps.png" width="300" height="146" alt="Приложения">
           <h3>Приложения</h3>
           <b>Покорите топ-10 приложений в AppStore и Google play</b>
           <a class="button" href="#">Заказать</a>
         </li>
         <li class="presentations">
+          <img src="img/presentations.png" width="300" height="146" alt="Презентации">
           <h3>Презентации</h3>
           <b>Вы даже не подозреваете, насколько вы изумительны!</b>
           <a class="button" href="#">Заказать</a>
@@ -55,15 +57,15 @@
   <footer>
     <div class="footer-social">
       <!-- Лого соц сетей??-->
-      <ul>
+      <ul class="footer-social-links">
         <li>
-          <a class="social-button" href="#">Вконтакте</a>
+          <a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">Вконтакте</a>
         </li>
         <li>
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#"><img src="img/fb-icon.svg" width="26" height="15" alt="Фейсбук">Фейсбук</a>
         </li>
         <li>
-          <a class="social-button" href="#">Инстаграм</a>
+          <a class="social-button" href="#"><img src="img/insta-icon.svg" width="26" height="15" alt="Инстаграм">Инстаграм</a>
         </li>
       </ul>
     </div>
@@ -73,6 +75,24 @@
       <b>Скидка 10% для друзей из социальных сетей</b>
     </div>
   </footer>
+  <section class="visually-hidden modal-write-us">
+    <h2>Напишите нам</h2>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name-surname-field">Ваше имя</label>
+        <input type="text" name="name-surname" id="name-surname-field" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email-field">Ваш e-mail</label>
+        <input type="email" name="email" id="email-field" placeholder="email@example.com">
+        <p>
+          <label for="textarea-field">Текст письма</label>
+          <textarea rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+    </form>
+    <button class="button" type="submit">Отправить</button>
+  </section>
+  <button class="modal-close">Закрыть</button>
 </body>
 
 </html>
