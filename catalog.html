@@ -204,24 +204,25 @@
   </div>
   </footer>
 
-  <section class="visually-hidden modal-write-us">
+  <section class="modal-write-us">
     <h2>Напишите нам</h2>
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="modal-form-item">
         <label for="name-surname-field">Ваше имя</label>
         <input type="text" name="name-surname" id="name-surname-field" placeholder="Имя Фамилия">
       </p>
-      <p>
+      <p class="modal-form-item">
         <label for="email-field">Ваш e-mail</label>
         <input type="email" name="email" id="email-field" placeholder="email@example.com">
-        <p>
-          <label for="textarea-field">Текст письма</label>
-          <textarea rows="5" placeholder="В свободной форме" id="textarea-field"></textarea>
-        </p>
+      <p class="modal-form-item">
+        <label for="textarea-field">Текст письма</label>
+        <textarea rows="5" placeholder="В свободной форме" id="textarea-field"></textarea>
+      </p>
     </form>
-    <button class="button" type="submit">Отправить</button>
+      <button class="button button-form" type="submit">Отправить</button>
       <button class="modal-close">Закрыть</button>
   </section>
+
 </body>
 
 </html>
