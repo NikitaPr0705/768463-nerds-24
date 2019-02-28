@@ -673,6 +673,7 @@ a {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  position: relative;
   width: 1160px;
   margin: auto;
   margin-bottom: 60px;
@@ -739,7 +740,7 @@ a {
   margin-top: 60px;
 
   /* border: 2px solid green; */
-  /* background-color: rgba(0, 240, 255, 0.5); */
+  /* background-color: rgba(10, 240, 255, 0.5); */
 }
 
 .ready-templates-list li {
@@ -860,6 +861,32 @@ a {
   display: block;
   cursor: pointer;
   user-select: none;
+}
+
+/*стилизация будет изменена на правильную после консультации*/
+.filter-item-separate {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 760px;
+
+  /* border: 2px solid blue; */
+  /* background-color: rgba(0, 0, 255, 0.5); */
+}
+
+/*стилизация будет изменена на правильную после консультации*/
+.filter-item-separate legend {
+  position: absolute;
+  display: flex;
+  left: 10px;
+}
+
+/*стилизация будет изменена на правильную после консультации*/
+.filter-form-separate {
+  display: flex;
+  flex-direction: row;
 }
 
 .filter-input-checkbox + label::before {

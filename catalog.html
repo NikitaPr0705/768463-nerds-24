@@ -131,7 +131,25 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="filter-item filter-item-separate">
+            <legend>Сортировать:</legend>
+            <ul class="filter-form-separate">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="separate-type" value="price" id="filter-price">
+                <label for="filter-price">По цене</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="separate-type" value="type" id="filter-type">
+                <label for="filter-type">По типу</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="separate-type" value="name" id="filter-name">
+                <label for="filter-name">По названию</label>
+              </li>
+            </ul>
+          </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
+
         </form>
         </section>
     </div>
