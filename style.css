@@ -117,6 +117,10 @@ a {
   /* background-color: rgba(255, 0, 80, 0.5); */
 }
 
+/* .catalog-current {
+  text-decoration: underline;
+} */
+
 .folder-item {
   position: relative;
   display: flex;
