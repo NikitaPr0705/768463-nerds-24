@@ -95,11 +95,10 @@ a {
 .main-header-logo:hover {
   opacity: 0.7;
 }
-/*?????*/
-.main-header-logo:focus {
+
+.main-header-logo:active {
   opacity: 0.3;
 }
-/*?????*/
 
 
 
@@ -135,6 +134,8 @@ a {
 .main-navigation-list a,
 .folder-item a {
   color: #000000;
+  text-decoration: none;
+
 }
 
 .main-navigation-list a:hover,
@@ -147,7 +148,6 @@ a {
 .main-navigation-list a:active,
 .folder-item a:active {
   color: rgba(0, 0, 0, 0.5);
-  text-decoration: underline;
 }
 
 .folder-item {
@@ -477,16 +477,16 @@ a {
   background-color: rgba(255, 255, 0, 0.5); */
 }
 
-.partners-list img {
+.partners-list-item a {
  opacity: 0.3;
 }
 /*?????*/
-.partners-list img:hover {
-  opacity:
+.partners-list a:hover {
+  opacity: 1;
 }
 /*?????*/
-.partners-list img:focus {
-  opacity:
+.partners-list a:active {
+  opacity: 0.2;
 }
 
 .contacts-container {
@@ -599,8 +599,8 @@ a {
   margin: 0 auto;
   padding: 0;
 
-  /* border: 2px solid red;
-  background-color: rgba(255, 0, 0, 0.5); */
+  /* border: 2px solid red; */
+  /* background-color: rgba(255, 0, 0, 0.5); */
 }
 
 
@@ -612,25 +612,30 @@ a {
   height: 79px;
   border-radius: 50%;
   cursor: pointer;
+
+  /* border: 2px solid blue; */
+  /* background-color: rgba(255, 100, 250, 0.5); */
 }
 
 .footer-social-links a {
   position: absolute;
-  top: 30px;
-  left: 27px;
+  text-align: center;
+  top: 29px;
+  left: 25px;
+  width: 27px;
+
+  /* border: 2px solid yellow; */
+  /* background-color: rgba(0, 100, 250, 0.5); */
 }
 
-.social:hover {
+.footer-social-links li:hover {
   background-color: #e74246;
 }
 
-.social:active {
+.footer-social-links li:active {
   background-color: #d7373b;
 }
 
-.social:active path {
-  background-color: #e37376;
-}
 
 .footer-affiliate {
   width: 560px;
@@ -658,7 +663,7 @@ a {
   bottom: 170px;
   top: 60px;
   left: 12.5%;
-  /* display: none; */
+  display: none;
   color: #000000;
   width: 961px;
   height: 590px;
@@ -721,7 +726,6 @@ border: 2px solid #d7dcde;
 border-radius: 2px;
 font: inherit;
 /* background-color: transparent; */
-border: 2px solid #d7dcde;
 
 box-sizing: border-box;
 
@@ -737,6 +741,16 @@ box-sizing: border-box;
   margin-bottom: 16px;
   border: 2px solid #d7dcde;
   border-radius: 2px;
+}
+
+.modal-form-item input:hover,
+.modal-form-item textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal-form-item input:focus,
+.modal-form-item textarea:focus {
+  border: 2px solid #000000;
 }
 
 .button-form {
@@ -768,7 +782,8 @@ box-sizing: border-box;
   width: 19px;
   height: 3px;
 
-  background-color: #fecccd;
+  background-color: #fb565a;
+  opacity: 0.5;
 }
 
 .modal-close::before {
@@ -777,6 +792,10 @@ box-sizing: border-box;
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-close:hover {
+
 }
 /*modal window*/
 
@@ -902,17 +921,21 @@ box-sizing: border-box;
   color: #000000;
   background-color: #eeeeee;
   border-radius: 3%;
+
+  /* border: 1px solid green; */
+  /* background-color: rgba(220, 0, 200, 0.5); */
 }
 
-/*?????*/
-.pagination-item a:hover,
-.pagination-item a:focus,
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
 .pagination-item a:active {
+  background-color: #d5d5d5;
+  opacity: 0.5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-/*??????*/
-
-
-
 /*?????*/
 .pagination-item-current a {
   background-color: #ffffff;
@@ -920,14 +943,6 @@ box-sizing: border-box;
   outline: 3px solid #dbdbdb;
 }
 /*?????*/
-
-
-/*?????*/
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
-
-}
 
 .cost {
   margin-bottom: 62px;
@@ -1013,7 +1028,8 @@ box-sizing: border-box;
   top: -4px;
   width: 23px;
   height: 23px;
-  background-image: url("img/checkbox-off-normal.png");
+  background-image: url("img/checkbox-off.png");
+  opacity: 0.5;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
@@ -1026,7 +1042,8 @@ box-sizing: border-box;
   top: -4px;
   width: 27px;
   height: 23px;
-  background-image: url("img/checkbox-on-normal.png");
+  background-image: url("img/checkbox-on.png");
+  opacity: 0.5;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
@@ -1039,7 +1056,8 @@ box-sizing: border-box;
   top: -4px;
   width: 25px;
   height: 25px;
-  background-image: url("img/radio-off-normal.png");
+  background-image: url("img/radio-off.png");
+  opacity: 0.5;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
@@ -1052,10 +1070,15 @@ box-sizing: border-box;
   top: -4px;
   width: 25px;
   height: 25px;
-  background-image: url("img/radio-on-normal.png");
+  background-image: url("img/radio-on.png");
+  opacity: 0.5;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
+}
+
+/*????*/
+.filter-input-checkbox:hover +label {
 }
 
 /*---------------------*/
@@ -1157,4 +1180,10 @@ box-sizing: border-box;
 
 .filter-button:hover {
   background-color: #dfdfdf;
+  color: #000000;
+}
+
+.filter-button:active {
+  color: #000000;
+  opacity: 0.5;
 }
