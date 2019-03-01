@@ -405,10 +405,15 @@ a {
   /* background-color: rgba(0, 0, 255, 0.5); */
 }
 
+.index-columns p:nth-child(2)  {
+  font-size: 45px;
+  line-height: 45px;
+}
+
 .about {
   width: 660px;
 
-  /* border: 2px solid blue; */
+  /* border: 2px solid yellow; */
   /* background-color: rgba(255, 0, 80, 0.5); */
 
 }
@@ -426,6 +431,29 @@ a {
   font-weight: normal;
 }
 
+.development-orders {
+  margin: 0;
+  padding: 0;
+
+  /* border: 2px solid blue; */
+  /* background-color: rgba(255, 0, 80, 0.5); */
+}
+
+.development-orders li {
+  padding-left: 37px;
+  padding-top: 36px;
+  /* border: 2px solid red; */
+  /* background-color: rgba(2, 100, 80, 0.5); */
+
+}
+
+.development-orders li:nth-child(1) {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 0;
+}
+
 .numbers {
   width: 360px;
 
@@ -433,17 +461,18 @@ a {
   /* background-color: rgba(255, 0, 80, 0.5); */
 }
 
-.numbers p:nth-child(3) {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: bold;
+.numbers-about {
+  display: inline-block;
   list-style: none;
 }
 
-.index-columns p:nth-child(2)  {
-  font-size: 45px;
-  line-height: 45px;
+.numbers li:nth-child(1) {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
 }
+
+
 
 .partners {
   width: 1160px;
@@ -465,8 +494,8 @@ a {
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 
-  /* border: 2px solid red;
-  background-color: rgba(255, 0, 0, 0.5); */
+  /* border: 2px solid red; */
+  /* background-color: rgba(255, 0, 0, 0.5); */
 }
 
 .partners-list li {
@@ -480,6 +509,7 @@ a {
   /* border: 2px solid blue;
   background-color: rgba(255, 255, 0, 0.5); */
 }
+
 
 .partners-list-item a {
  opacity: 0.3;
