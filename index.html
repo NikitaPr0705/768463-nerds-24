@@ -17,10 +17,10 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
       </a>
         <ul class="main-navigation-list">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="navigation-item navigation-item-current"><a class="navigation-link" href="#">Студия</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Клиенты</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Магазин</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
         </ul>
         <ul class="folder-item">
           <li>
@@ -91,31 +91,44 @@
         <div class="index-columns-sections">
             <section class="about">
               <h2 class="visually-hidden">О нас</h2>
-                <p>Мы — маленькая, но гордая
+                <p class="tagline">Мы — маленькая, но гордая
                 дизайн-студия из Краснодара.</p>
-                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+                <p class="principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
                   превыше креатива. Работаем не покладая рук, как роботы.</p>
-
+                <h3>Выполняем заказы на разработку:</h3>
                 <ul class="development-orders">
-
-                   <li>Выполняем заказы на разработку:</li>
-
-        	         <li>Веб-сайтов любой сложности</li>
-
-        	         <li>Мобильных приложений для iOS и Android</li>
-
-        	         <li>Слайдшоу и видео для корпоративных презентаций</li>
+        	         <li class="development-orders-item">Веб-сайтов любой сложности</li>
+        	         <li class="development-orders-item">Мобильных приложений для iOS и Android</li>
+        	         <li class="development-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
                 </ul>
               </section>
           <section class="numbers">
             <h2 class="visually-hidden">О нас в цифрах</h2>
-            <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип студии Нёрдс">
-            <ul class="numbers-about">
-              <li>C 2004 года любим точность во всем:</li>
-              <li>146% Уровень самоотдачи</li>
-              <li>100% Соблюдение сроков</li>
-              <li>50% Минимальная предоплата</li>
-            </ul>
+            <img class="numbers-logo" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип студии Нёрдс">
+            <h3>C 2004 года любим точность во всем:</h3>
+            <dl class="numbers-about">
+              <div class="numbers-about-item">
+              <dt>Уровень самоотдачи</dt>
+              <dd>
+                146
+                <span class="numbers-about-percentage">%</span>
+              </dd>
+            </div>
+            <div class="numbers-about-item">
+              <dt>Соблюдение сроков</dt>
+              <dd>
+                100
+                  <span class="numbers-about-percentage">%</span>
+              </dd>
+            </div>
+            <div class="numbers-about-item">
+              <dt>Минимальная предоплата</dt>
+              <dd>
+                50
+                <span class="numbers-about-percentage">%</span>
+              </dd>
+            </div>
+            </dl>
           </section>
       </div>
     </div>
@@ -202,6 +215,16 @@
       <button class="button button-form" type="submit">Отправить</button>
       <button class="modal-close">Закрыть</button>
   </section>
+
+  <script>
+    var button = document.querySelector(".write-us-button");
+    var popup = document.querySelector(".modal-write-us");
+
+  button.addEventListener("click", function (evt) {
+    console.log("Клик по кнопке Напишите нам");
+    evt.preventDefault();
+  });
+  </script>
 
 </body>
 

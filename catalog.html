@@ -17,10 +17,10 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
       </a>
         <ul class="main-navigation-list">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li class="catalog-current"><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Студия</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Клиенты</a></li>
+          <li class="navigation-item navigation-item-current"><a class="navigation-link" href="catalog.html">Магазин</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
         </ul>
         <ul class="folder-item">
           <li>
@@ -35,25 +35,69 @@
     <h1 class="page-title">Магазин готовых шаблонов</h1>
   </div>
   <div class="store">
+    <div class="sort">
+    <p class="templates-caption">Сортировать:</p>
+    <div class="templates-sort">
+      <ul class="templates-sort-list">
+        <li class="sort-list-item"><a class="sort-list-link">По цене</a></li>
+        <li class="sort-list-item"><a class="sort-list-link" href="#">По типу</a></li>
+        <li class="sort-list-item"><a class="sort-list-link" href="#">По названию</a></li>
+      </ul>
+      <ul class="templates-sort-list sort-icons">
+        <li class="sort-list-item sort-icon-down"><a class="sort-list-link" aria-label="Вниз"><img src="img/icon-down-dir.png" width="11" height="10" alt="icon-down"></img></a></li>
+        <li class="sort-list-item sort-icon-up"><a class="sort-list-link" href="#" aria-label="Вверх"><img src="img/icon-up-dir.png" width="11" height="10" alt="icon-up"></img></a></li>
+    </ul>
+    </div>
+  </div>
     <section class="ready-template">
       <ul class="ready-templates-list">
         <li class="ready-templates-item">
-          <a href="#"><img src="img/sedona.jpg" width="360" height="576" alt="Седона">Sedona</a>
+          <img class="card-item-header" src="img/browser.png" width="360" height="40">
+          <img class="card-product-image" src="img/sedona.jpg" width="360" height="576" alt="Седона">
+          <div class="card-product-description">
+            <h3 class="card-product-title">Sedona</h3>
+            <p class="card-product-text">Информационный сайт<br>для туристов</p><a class="button catalog-button" href="#" class="">9 900 руб.</a>
+          </div>
         </li>
         <li class="ready-templates-item">
-          <a href="#"><img src="img/pink.jpg" width="360" height="576" alt="Pink">Pink</a>
+          <img class="card-item-header" src="img/browser.png" width="360" height="40">
+          <img class="card-product-image" src="img/pink.jpg" width="360" height="576" alt="Pink">
+          <div class="card-product-description">
+            <h3 class="card-product-title">Pink</h3>
+            <p class="card-product-text">Продуктовый лендинг<br>приложения для iOS и Android</p><a class="button catalog-button" href="#" class="">9 900 руб.</a>
+          </div>
         </li>
         <li class="ready-templates-item">
-          <a href="#"><img src="img/barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">Barbershop</a>
+          <img class="card-item-header" src="img/browser.png" width="360" height="40">
+          <img class="card-product-image" src="img/barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">
+          <div class="card-product-description">
+            <h3 class="card-product-title">Barbershop</h3>
+            <p class="card-product-text">Продуктовый лендинг<br>приложения для iOS и Android</p><a class="button catalog-button" href="#" class="">9 900 руб.</a>
+          </div>
         </li>
         <li class="ready-templates-item">
-          <a href="#"><img src="img/mishka.jpg" width="360" height="576" alt="Mishka">Mishka</a>
+          <img class="card-item-header" src="img/browser.png" width="360" height="40">
+          <img class="card-product-image" src="img/mishka.jpg" width="360" height="576" alt="Mishka">
+          <div class="card-product-description">
+            <h3 class="card-product-title">Mishka</h3>
+            <p class="card-product-text">Интернет-магазин<br>вязаных игрушек</p><a class="button catalog-button" href="#" class="">9 900 руб.</a>
+          </div>
         </li>
         <li class="ready-templates-item">
-          <a href="#"><img src="img/aplus.jpg" width="360" height="576" alt="Study">A Plus</a>
+          <img class="card-item-header" src="img/browser.png" width="360" height="40">
+          <img class="card-product-image" src="img/aplus.jpg" width="360" height="576" alt="Study">
+          <div class="card-product-description">
+              <h3 class="card-product-title">A Plus</h3>
+              <p class="card-product-text">Лендинг курсов повышения<br>квалификации</p><a class="button catalog-button" href="#" class="">9 900 руб.</a>
+            </div>
         </li>
         <li class="ready-templates-item">
-          <a href="#"><img src="img/kvast.jpg" width="360" height="576" alt="Кваст">Кваст</a>
+          <img class="card-item-header" src="img/browser.png" width="360" height="40">
+          <img class="card-product-image" src="img/kvast.jpg" width="360" height="576" alt="Кваст">
+          <div class="card-product-description">
+            <h3 class="card-product-title">Кваст</h3>
+            <p class="card-product-text">Промо-сайт производителя<br>крафтового кваса</p><a class="button catalog-button" href="#" class="">9 900 руб.</a>
+          </div>
         </li>
       </ul>
       <ul class="pagination-list">
@@ -131,25 +175,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-item filter-item-separate">
-            <legend>Сортировать:</legend>
-            <ul class="filter-form-separate">
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="separate-type" value="price" id="filter-price">
-                <label for="filter-price">По цене</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="separate-type" value="type" id="filter-type">
-                <label for="filter-type">По типу</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="separate-type" value="name" id="filter-name">
-                <label for="filter-name">По названию</label>
-              </li>
-            </ul>
-          </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
-
         </form>
         </section>
     </div>
