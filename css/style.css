@@ -608,6 +608,11 @@ a {
   display: none;
 }
 
+.map {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .contacts-container {
   width: 100%;
   margin: 0 auto;
