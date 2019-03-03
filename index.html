@@ -151,10 +151,8 @@
     </section>
     <div class="contacts-container">
       <div class="map">
-        <img src="img/map.jpg" width="1440" height="416" alt="Расположение студии Нёрдс">
-      </div>
-      <div class="map-marker">
-        <img src="img/map-marker.png" width="231" height="190" alt="Точка на карте">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1551613126292"
+          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="contacts">
         <div class="contacts-items">
@@ -200,17 +198,17 @@
     </div>
   </footer>
 
-  <section class="modal-write-us">
+  <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="modal-form-item">
+      <p class="modal-form-item modal-name">
         <label for="name-surname-field">Ваше имя</label>
-        <input type="text" name="name-surname" id="name-surname-field" placeholder="Имя Фамилия">
+        <input type="text" name="name" id="name-surname-field" placeholder="Имя Фамилия">
       </p>
-      <p class="modal-form-item">
+      <p class="modal-form-item modal-email">
         <label for="email-field">Ваш e-mail</label>
         <input type="email" name="email" id="email-field" placeholder="email@example.com">
-        <p class="modal-form-item">
+        <p class="modal-form-item modal-text">
           <label for="textarea-field">Текст письма</label>
           <textarea rows="5" placeholder="В свободной форме" id="textarea-field"></textarea>
         </p>
@@ -218,17 +216,7 @@
     <button class="button button-form" type="submit">Отправить</button>
     <button class="modal-close">Закрыть</button>
   </section>
-
-  <script>
-    var button = document.querySelector(".write-us-button");
-    var popup = document.querySelector(".modal-write-us");
-
-    button.addEventListener("click", function(evt) {
-      console.log("Клик по кнопке Напишите нам");
-      evt.preventDefault();
-    });
-  </script>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
