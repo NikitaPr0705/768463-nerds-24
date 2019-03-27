@@ -6,7 +6,7 @@
   <title>Дизайн-студия "Нёрдс"</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,41 +40,42 @@
           </div>
         </div>
       </nav>
-      <section class="slider">
-        <div class="slider-container">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" aria-label="Слайдер" checked>
-          <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle" aria-label="Слайдер">
-          <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle" aria-label="Слайдер">
-          <div class="slider-controls">
-            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-            <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
-          </div>
-          <ul class="slider-list">
-            <li class="slider-item">
-              <h3>Долго, дорого,<br> скрупулезно.</h3>
-              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-              <a class="slider-item-button button" href="#" aria-label="Узнать больше">Узнать больше</a>
-            </li>
-            <li class="slider-item">
-              <h3>Любим математику как никто другой</h3>
-              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slider-item-button button" href="#" aria-label="Узнать больше">Узнать больше</a>
-            </li>
-            <li class="slider-item">
-              <h3>Только ночь,<br> только хардкор</h3>
-              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-              <a class="slider-item-button button" href="#" aria-label="Узнать больше">Узнать больше</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+
     </div>
 
   </header>
 
   <main class="main-container">
+    <section class="slider">
+      <div class="slider-container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" aria-label="Слайдер" checked>
+        <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle" aria-label="Слайдер">
+        <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle" aria-label="Слайдер">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3> Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-item-button button" href="#" aria-label="Узнать больше">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-item-button button" href="#" aria-label="Узнать больше">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider-item-button button" href="#" aria-label="Узнать больше">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
     <section class="services">
       <h2 class="visually-hidden">Услуги студии</h2>
@@ -144,23 +145,27 @@
         </section>
       </div>
     </div>
-    <section class="partners">
-      <h2 class="visually-hidden">Партнёры</h2>
-      <ul class="partners-list">
-        <li class="partners-list-item">
-          <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Партнёр HTML Академия"><img src="img/html-academy-logo-black.png" width="199" height="68" alt="Лого HTML Академии"></a>
-        </li>
-        <li class="partners-list-item">
-          <a class="barbershop" href="#" aria-label="Партнёр барбершоп Бородинский"><img src="img/barbershop-logo-black.png" width="209" height="87" alt="Лого барбершопа Бородинский"></a>
-        </li>
-        <li class="partners-list-item">
-          <a class="pink" href="#" aria-label="Партнёр Пинк"><img src="img/pink-logo-black.png" width="185" height="52" alt="Лого Pink"></a>
-        </li>
-        <li class="partners-list-item">
-          <a class="mishka" href="#" aria-label="Партнёр магазин Мишка"><img src="img/mishka-logo-black.png" width="173" height="84" alt="Лого Mishka"></a>
-        </li>
-      </ul>
+    <section class="partners-container">
+
+      <div class="partners">
+        <h2 class="visually-hidden">Партнёры</h2>
+        <ul class="partners-list">
+          <li class="partners-list-item">
+            <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Партнёр HTML Академия"><img src="img/html-academy-logo-black.png" width="199" height="68" alt="Лого HTML Академии"></a>
+          </li>
+          <li class="partners-list-item">
+            <a class="barbershop" href="#" aria-label="Партнёр барбершоп Бородинский"><img src="img/barbershop-logo-black.png" width="209" height="87" alt="Лого барбершопа Бородинский"></a>
+          </li>
+          <li class="partners-list-item">
+            <a class="pink" href="#" aria-label="Партнёр Пинк"><img src="img/pink-logo-black.png" width="185" height="52" alt="Лого Pink"></a>
+          </li>
+          <li class="partners-list-item">
+            <a class="mishka" href="#" aria-label="Партнёр магазин Мишка"><img src="img/mishka-logo-black.png" width="173" height="84" alt="Лого Mishka"></a>
+          </li>
+        </ul>
+      </div>
     </section>
+
     <div class="frame-map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1551613126292"
         height="416" style="border:0" allowfullscreen aria-label="Карта"></iframe>
@@ -175,6 +180,7 @@
         <a href="#modal-window" class="button write-us-button" aria-label="Напишите нам">Напишите нам</a>
       </div>
     </div>
+
   </main>
 
   <footer class="main-footer">
