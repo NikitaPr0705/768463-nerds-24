@@ -17,13 +17,6 @@ try {
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  // name.focus();
-  // if (storage) {
-  //   name.value = storage;
-  //   email.focus();
-  // } else {
-  //   name.focus();
-  // }
 });
 
 close.addEventListener("click", function(evt) {
@@ -44,11 +37,11 @@ form.addEventListener("submit", function(evt) {
   }
 });
 
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("modal-show")) {
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
-  });
+  }
+});
