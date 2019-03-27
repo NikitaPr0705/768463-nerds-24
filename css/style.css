@@ -279,6 +279,7 @@ a {
 }
 
 .slider-item:nth-child(1) {
+
   background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
