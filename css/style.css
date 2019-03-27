@@ -93,6 +93,14 @@ a {
   margin-top: 49px;
 }
 
+.main-header-logo a:hover {
+  opacity: 0.7;
+}
+
+.main-header-logo a:active {
+  opacity: 0.3;
+}
+
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,6 +668,11 @@ a {
 .partners-list-item:last-child::after {
   content: "";
   display: none;
+}
+
+.frame-map iframe {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .contacts-container {
